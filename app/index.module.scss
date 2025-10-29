@@ -1,6 +1,0 @@
-@use '@shared/styles' as *;
-
-.root {
-  @extend %flex-center;
-  background-color: var(--color-bg);
-}

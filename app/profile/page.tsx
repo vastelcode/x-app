@@ -1,8 +1,8 @@
 
 export default function ProfilePage() {
   return (
-    <>
-    профиль
-    </>
+    <main className="page">
+      профиль
+    </main>
   );
 }

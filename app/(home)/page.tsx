@@ -1,8 +1,10 @@
+import styles from './HomePage.module.scss';
+
 
 export default function HomePage() {
   return (
-    <>
-    главная
-    </>
+    <main className={'page'}>
+
+    </main>
   );
 }

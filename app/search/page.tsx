@@ -2,8 +2,8 @@
 
 export default function SearchPage() {
   return (
-    <>
-    поиск
-    </>
+    <main className="page">
+      поиск
+    </main>
   );
 }

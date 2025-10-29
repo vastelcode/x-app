@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
+.page {
+  width: 1000px;
+  min-height: 100vh;
+  animation: move .5s ease-in-out;
+}
 
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.root {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

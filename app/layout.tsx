@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  weight: ['500', '400','700'],
+  subsets: ['cyrillic','latin'],
+  variable: '--font-montserrat'
+})
+
 import { StoreProvider } from "./providers/StoreProvider";
 import { ThemeProvider } from "./providers/ThemeProvider";
 
@@ -7,7 +15,6 @@ import { Sidebar } from "@widgets/sidebar";
 
 import './globals.css';
 
-import styles from './index.module.scss';
 
 export const metadata: Metadata = {
   title: "X | Twitter",
@@ -23,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.variable}>
     <body
-    className={styles.root}
+    className={`root flex justify-center`}
     >
       <StoreProvider>
         <ThemeProvider>
